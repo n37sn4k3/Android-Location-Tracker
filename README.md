@@ -22,7 +22,7 @@ Stop tracking (step(s) to follow):
 2. Stop "LocationService"
 3. Stop "MainService" (will release the wake lock and finalize the binding)
 
-### How to use the binding connection (with examples)
+### How to use it (with examples)
 Note(s):
 - After the "LocationService" binding connect, you have to request track type with details by calling one of the its methods from the method overloading (from "MainService").
 - To start requesting periodical location updates you must request them right after the "LocationService" is successfully bound in "onServiceConnected(ComponentName name, IBinder service)" overridden method of the "ServiceConnection" interface only if the required permissions are granted.
